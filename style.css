@@ -1,0 +1,48 @@
+.heading
+{
+    width: 100%;
+    text-align: left;
+}
+.heading h3{
+    display: inline;
+}
+
+.heading button{
+    float: right;
+    border: 1px solid white;
+}
+
+#start ,#status, #restart
+{
+    font-size: 22px;
+}
+
+.modal-dialog
+{
+    width: 70%;
+}
+.modal-body
+{
+    text-align: left;
+    font-size: 20px;
+}
+
+canvas 
+  {
+      border:3px solid white;
+      border-radius: 20px;
+      box-shadow:  5px 5px 5px white;
+  }
+
+  #copy_right 
+  {  
+        position:fixed;
+        line-height:3;
+        color:white;
+        bottom:0;
+        width:100%;
+        text-align:center;
+        margin-left: -959px;
+    }
+    
+  
