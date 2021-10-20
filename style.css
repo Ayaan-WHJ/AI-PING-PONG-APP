@@ -1,7 +1,8 @@
+
 .heading
 {
-    width: 100%;
-    text-align: left;
+width: 100%;
+text-align: left;
 }
 .heading h3{
     display: inline;
@@ -14,7 +15,7 @@
 
 #start ,#status, #restart
 {
-    font-size: 22px;
+font-size: 22px;
 }
 
 .modal-dialog
@@ -26,23 +27,15 @@
     text-align: left;
     font-size: 20px;
 }
-
+h4
+{
+   background-color: grey;
+   color:white;
+   line-height: 2;
+}
 canvas 
   {
       border:3px solid white;
       border-radius: 20px;
       box-shadow:  5px 5px 5px white;
   }
-
-  #copy_right 
-  {  
-        position:fixed;
-        line-height:3;
-        color:white;
-        bottom:0;
-        width:100%;
-        text-align:center;
-        margin-left: -959px;
-    }
-    
-  
