@@ -1,4 +1,8 @@
-
+function preload()
+{
+  ball_touch_paddle = loadSound("ball_touch_paddle.wav");
+  miss = loadSound("missed.wav");
+}
 
 
 var paddle2 =10,paddle1=10;
@@ -160,6 +164,11 @@ function move(){
    ellipse(ball.x,ball.y,ball.r,20)
    ball.x = ball.x + ball.dx;
    ball.y = ball.y + ball.dy;
+   if (ball.y >= paddle1Y && ball.y <= paddle1Y + paddleHeight) 
+   {
+   ball_touch_paddle.play()  ;
+   miss.play();
+   }
    if(ball.x+ball.r>width-ball.r/2){
        ball.dx=-ball.dx-0.5;       
    }
@@ -183,7 +192,7 @@ if(pcscore ==4){
     stroke("white");
     textSize(25);
     text("Game Over!",width/2,height/2);
-    text("Reload the page!",width/2,height/2+30)
+    text("Press restart button to play the game again!",width/2,height/2+30)
     noLoop();
     pcscore = 0;
  }
@@ -215,4 +224,9 @@ function paddleInCanvas(){
  
   
 }
-
+function restart()
+{
+  pcscore = 0;
+  playerscore  = 0;
+  loop();
+}
